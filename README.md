@@ -90,7 +90,8 @@ user@dummy:~$
 
 
 # Notes:
-- The Python script works for establishing the Database and doing some very complex queries.  On a 10 year old system, it takes about .5 seconds per IP query. And each update a minimum of about 20K (10K per IP type). 
-- The lua script was written to integrate into other applications such as lighttpd.  Such that specific countries could be redirected or blocked.
+- The Python script works for establishing the Database and doing some very complex queries.  On a 10 year old system, it takes about 200 milliseconds per IP query. And each update a minimum of about 20KB (10KB per IP type). 
+- The lua script was written to integrate into other applications such as lighttpd.  Such that specific countries could be redirected or blocked. Each query takes about .01 second (Yes, that is 10 milliseconds)
+- These scripts have been tested on Linux amd64.  There are no practical restrictions for running on Windows, Mac,arm/arm64. .
 - IPDeny.com has a licence requirement.  I strongly encourage all users of this script to abide by the usage conditions of the data. IPDeny.com is an amazing service that I wish to thrive.
 
