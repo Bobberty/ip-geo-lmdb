@@ -215,7 +215,8 @@ class IPCountry:
 		return
 
 if __name__ == '__main__':
-	IPLister = IPCountry('iplist-test3.lmdb')
+	# Change the LMDB location here
+	IPLister = IPCountry('*** BADLMDB NAME ****')
 	parser = argparse.ArgumentParser(description='Script to download and evaluate IP address assignment to specific countries')
 	parser.add_argument('-u','--update',action ='store_true',help='Update the IP address database')
 	parser.add_argument('-l','--lookup',action ='store',help='Look up the IP address and return the source country.')
