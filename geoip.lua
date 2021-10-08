@@ -1,4 +1,4 @@
-
+#!/usr/bin/lua
 
 function countryip(IPAddr, LmdbLocation)
 	local inet = require 'inet'
